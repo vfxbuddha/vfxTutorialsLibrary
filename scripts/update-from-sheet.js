@@ -34,9 +34,13 @@ async function getYouTubeVideoInfo(url) {
     try {
         const videoInfo = await play.video_info(url);
         const details = videoInfo.video_details;
+        let description = details.description || '';
+        if (description.length > 50) {
+            description = description.substring(0, 50) + '...';
+        }
         return {
             title: details.title,
-            description: details.description || '',
+            description: description,
             imageUrl: details.thumbnails[details.thumbnails.length - 1].url, // 가장 높은 해상도 썸네일
         };
     } catch (error) {
@@ -114,6 +118,8 @@ async function updateTutorials() {
                 imageUrl = imageUrl || videoInfo.imageUrl;
                 source = source || 'YouTube';
             }
+        } else if (description && description.length > 50) {
+            description = description.substring(0, 50) + '...';
         }
 
         const tutorial = {
