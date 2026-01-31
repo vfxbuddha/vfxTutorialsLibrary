@@ -1,0 +1,64 @@
+{
+  "videoTutorials": [
+    {
+      "id": "vid001",
+      "title": "Houdini 초보자를 위한 VFX 파이프라인",
+      "description": "절차적 모델링과 시뮬레이션의 기초부터 고급 기술까지 다룹니다.",
+      "imageUrl": "https://images.unsplash.com/photo-1603468620905-8de7d86b781e?q=80&w=2070&auto=format&fit=crop",
+      "source": "YouTube",
+      "url": "#"
+    },
+    {
+      "id": "vid002",
+      "title": "Blender VFX - 현실적인 폭발 만들기",
+      "description": "Blender의 물리 시뮬레이션을 사용하여 사실적인 폭발 효과를 만드는 방법을 배웁니다.",
+      "imageUrl": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
+      "source": "Vimeo",
+      "url": "#"
+    },
+    {
+      "id": "vid003",
+      "title": "After Effects 모션 그래픽 튜토리얼",
+      "description": "After Effects를 활용한 감각적인 모션 그래픽 제작 기법을 소개합니다.",
+      "imageUrl": "https://images.unsplash.com/photo-1593344484962-796b44d9f9b4?q=80&w=2070&auto=format&fit=crop",
+      "source": "YouTube",
+      "url": "#"
+    }
+  ],
+  "articleTutorials": [
+    {
+      "id": "art001",
+      "title": "실시간 VFX를 위한 Niagara 시스템 최적화",
+      "description": "Unreal Engine의 Niagara 시스템에서 높은 퍼포먼스를 유지하는 방법을 알아봅니다.",
+      "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726a?q=80&w=2070&auto=format&fit=crop",
+      "source": "Unreal Engine Blog",
+      "url": "#"
+    },
+    {
+      "id": "art002",
+      "title": "Unity 파티클 시스템 마스터하기",
+      "description": "Unity의 Shuriken 파티클 시스템을 사용하여 화려한 효과를 만드는 팁과 트릭.",
+      "imageUrl": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=2070&auto=format&fit=crop",
+      "source": "Ray Wenderlich Blog",
+      "url": "#"
+    },
+    {
+      "id": "art003",
+      "title": "Nuke 고급 컴포지팅 기술",
+      "description": "실사 영화 수준의 합성을 위한 Nuke의 고급 노드 활용법과 워크플로우를 다룹니다.",
+      "imageUrl": "https://images.unsplash.com/photo-1574717521934-99834a3c2c1a?q=80&w=2071&auto=format&fit=crop",
+      "source": "Creative Bloq",
+      "url": "#"
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": "blog001",
+      "title": "나의 첫 블로그 글: VFX 공부 시작하기",
+      "description": "VFX 분야에 처음 입문하는 분들을 위해 어떤 것부터 시작해야 할지 정리해보았습니다.",
+      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop",
+      "source": "내 블로그",
+      "url": "#"
+    }
+  ]
+}
