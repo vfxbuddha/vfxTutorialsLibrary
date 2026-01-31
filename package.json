@@ -1,15 +1,24 @@
 {
-  "name": "vfxtutorialslibrary",
+  "name": "vfx-tutorials-library",
   "version": "1.0.0",
-  "description": "A simple HTML/JS/CSS starter template",
+  "description": "A curated library of VFX tutorials.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-rss": "node scripts/update-from-rss.js",
+    "update-from-sheet": "node scripts/update-from-sheet.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "vfx",
+    "tutorials",
+    "houdini",
+    "nuke"
+  ],
+  "author": "Your Name",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "googleapis": "^140.0.1",
     "rss-parser": "^3.13.0"
   }
 }
