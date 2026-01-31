@@ -1,77 +1,48 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VFX 튜토리얼 라이브러리</title>
+    <title>VFX Tutorial Library</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="home-page">
     <header>
-        <h1><a href="#home">VFX 튜토리얼 라이브러리</a></h1>
+        <h1><a href="index.html">VFX Tutorial Library</a></h1>
         <nav>
             <ul>
-                <li><a href="#home" class="nav-link active">홈</a></li>
-                <li><a href="#video-tutorials" class="nav-link">비디오 튜토리얼</a></li>
-                <li><a href="#article-tutorials" class="nav-link">아티클 튜토리얼</a></li>
-                <li><a href="#my-blog" class="nav-link">내 블로그</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="video-tutorials.html" class="nav-link">Video Tutorials</a></li>
+                <li><a href="article-tutorials.html" class="nav-link">Article Tutorials</a></li>
+                <li><a href="blog.html" class="nav-link">My Blog</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="home">
-            <div class="hero">
-                <h2>환영합니다!</h2>
-                <p>이곳은 최고의 VFX 튜토리얼을 모아놓은 라이브러리입니다. 영상과 아티클을 통해 실력을 향상시켜 보세요.</p>
-            </div>
-
+            <h2>Latest Tutorials Summary</h2>
             <div class="home-section">
-                <div class="home-section-header">
-                    <h3>최신 비디오 튜토리얼</h3>
-                    <a href="#video-tutorials" class="more-link">더보기 &rarr;</a>
-                </div>
-                <div id="latest-videos" class="card-container home-cards"></div>
+                <h3>Latest Video Tutorials</h3>
+                <div id="home-video-tutorials" class="card-container"></div>
+                <a href="video-tutorials.html" class="view-all-link">View All &rarr;</a>
             </div>
-
             <div class="home-section">
-                <div class="home-section-header">
-                    <h3>최신 아티클 튜토리얼</h3>
-                    <a href="#article-tutorials" class="more-link">더보기 &rarr;</a>
-                </div>
-                <div id="latest-articles" class="card-container home-cards"></div>
+                <h3>Latest Article Tutorials</h3>
+                <div id="home-article-tutorials" class="card-container"></div>
+                <a href="article-tutorials.html" class="view-all-link">View All &rarr;</a>
             </div>
-
             <div class="home-section">
-                <div class="home-section-header">
-                    <h3>내 블로그 최신 글</h3>
-                    <a href="#my-blog" class="more-link">더보기 &rarr;</a>
-                </div>
-                <div id="latest-blog" class="card-container home-cards"></div>
-            </div>
-        </section>
-
-        <section id="video-tutorials" class="hidden">
-            <h2>비디오 튜토리얼</h2>
-            <div class="card-container"></div>
-        </section>
-
-        <section id="article-tutorials" class="hidden">
-            <h2>아티클 튜토리얼</h2>
-            <div class="card-container"></div>
-        </section>
-
-        <section id="my-blog" class="hidden">
-            <h2>내 블로그</h2>
-            <div class="card-container">
-                <!-- 데이터가 없을 경우 메시지가 여기에 표시됩니다. -->
+                <h3>Latest Blog Posts</h3>
+                <div id="home-my-blog" class="card-container"></div>
+                <a href="blog.html" class="view-all-link">View All &rarr;</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 VFX 튜토리얼 라이브러리. All Rights Reserved.</p>
+        <p>&copy; 2024 VFX Tutorial Library. All Rights Reserved.</p>
     </footer>
 
     <script src="main.js"></script>
