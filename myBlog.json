@@ -1,0 +1,11 @@
+[
+  {
+    "id": "blog001",
+    "title": "My First Blog Post: Starting My VFX Journey",
+    "description": "I've put together a guide on where to start for those new to the field of VFX.",
+    "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop",
+    "source": "My Blog",
+    "url": "#",
+    "tags": ["Career", "VFX"]
+  }
+]

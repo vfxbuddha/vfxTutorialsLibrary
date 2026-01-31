@@ -1,52 +1,25 @@
+
 document.addEventListener('DOMContentLoaded', () => {
-    // Load data and display content for the current page
-    const loadContent = async () => {
+    const bodyId = document.body.id;
+
+    const fetchData = async (url) => {
         try {
-            const response = await fetch('data.json');
+            const response = await fetch(url);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-            const data = await response.json();
-            routeContent(data);
+            return await response.json();
         } catch (error) {
-            console.error('Error loading data:', error);
+            console.error(`Error loading data from ${url}:`, error);
+            return [];
         }
     };
 
-    // Router function to determine which content to render based on the page
-    const routeContent = (data) => {
-        const bodyId = document.body.id;
-
-        switch (bodyId) {
-            case 'home-page':
-                populateHomePage(data);
-                break;
-            case 'video-tutorials-page':
-                populateCardContainer(data.videoTutorials, '#video-tutorials .card-container');
-                break;
-            case 'article-tutorials-page':
-                populateCardContainer(data.articleTutorials, '#article-tutorials .card-container');
-                break;
-            case 'blog-page':
-                populateCardContainer(data.myBlog, '#my-blog .card-container');
-                break;
-        }
-    };
-
-    // Populate the home page with the latest items from each section
-    const populateHomePage = (data) => {
-        // Display only the latest 3 items for each section
-        populateCardContainer(data.videoTutorials.slice(0, 3), '#home-video-tutorials');
-        populateCardContainer(data.articleTutorials.slice(0, 3), '#home-article-tutorials');
-        populateCardContainer(data.myBlog.slice(0, 3), '#home-my-blog');
-    };
-
-    // Create and populate content cards in the specified container
     const populateCardContainer = (items, containerSelector) => {
         const container = document.querySelector(containerSelector);
         if (!container) return;
 
-        container.innerHTML = ''; // Clear existing content
+        container.innerHTML = '';
         if (!items || items.length === 0) {
             container.innerHTML = '<p class="no-content">No content to display.</p>';
             return;
@@ -55,6 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
         items.forEach(item => {
             const card = document.createElement('div');
             card.className = 'card';
+
+            const tagsHtml = item.tags && item.tags.length > 0
+                ? `<div class="card-tags">${item.tags.map(tag => `<span>#${tag}</span>`).join('')}</div>`
+                : '';
+
             card.innerHTML = `
                 <a href="${item.url}" target="_blank" rel="noopener noreferrer">
                     <div class="card-image-container">
@@ -63,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="card-content">
                         <h3>${item.title}</h3>
                         <p>${item.description}</p>
+                        ${tagsHtml}
                         <span class="card-source">Source: ${item.source}</span>
                     </div>
                 </a>
@@ -71,6 +50,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Initial content load
-    loadContent();
+    const loadPageContent = async () => {
+        switch (bodyId) {
+            case 'home-page':
+                const [videoTutorials, articleTutorials, myBlog] = await Promise.all([
+                    fetchData('videoTutorials.json'),
+                    fetchData('articleTutorials.json'),
+                    fetchData('myBlog.json')
+                ]);
+                populateCardContainer(videoTutorials.slice(0, 3), '#home-video-tutorials');
+                populateCardContainer(articleTutorials.slice(0, 3), '#home-article-tutorials');
+                populateCardContainer(myBlog.slice(0, 3), '#home-my-blog');
+                break;
+
+            case 'video-tutorials-page':
+                const videoData = await fetchData('videoTutorials.json');
+                populateCardContainer(videoData, '#video-tutorials .card-container');
+                break;
+
+            case 'article-tutorials-page':
+                const articleData = await fetchData('articleTutorials.json');
+                populateCardContainer(articleData, '#article-tutorials .card-container');
+                break;
+
+            case 'blog-page':
+                const blogData = await fetchData('myBlog.json');
+                populateCardContainer(blogData, '#my-blog .card-container');
+                break;
+        }
+    };
+
+    loadPageContent();
 });

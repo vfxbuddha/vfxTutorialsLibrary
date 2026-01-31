@@ -1,0 +1,29 @@
+[
+  {
+    "id": "art001",
+    "title": "Optimizing Niagara Systems for Real-Time VFX",
+    "description": "Learn how to maintain high performance in Unreal Engine's Niagara system.",
+    "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726a?q=80&w=2070&auto=format&fit=crop",
+    "source": "Unreal Engine Blog",
+    "url": "#",
+    "tags": ["Unreal Engine", "Niagara"]
+  },
+  {
+    "id": "art002",
+    "title": "Mastering the Unity Particle System",
+    "description": "Tips and tricks for creating brilliant effects using Unity's Shuriken particle system.",
+    "imageUrl": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=2070&auto=format&fit=crop",
+    "source": "Ray Wenderlich Blog",
+    "url": "#",
+    "tags": ["Unity"]
+  },
+  {
+    "id": "art003",
+    "title": "Advanced Compositing Techniques in Nuke",
+    "description": "Covers advanced node utilization and workflows in Nuke for feature-film level compositing.",
+    "imageUrl": "https://images.unsplash.com/photo-1574717521934-99834a3c2c1a?q=80&w=2071&auto=format&fit=crop",
+    "source": "Creative Bloq",
+    "url": "#",
+    "tags": ["Nuke"]
+  }
+]

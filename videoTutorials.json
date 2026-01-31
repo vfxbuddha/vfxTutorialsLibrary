@@ -1,0 +1,38 @@
+[
+  {
+    "id": "vid004",
+    "title": "Supervisors Unsupervised: Behind the scenes of Sinners VFX",
+    "description": "Join three visual effects Supervisors as they talk ab...",
+    "imageUrl": "https://img.youtube.com/vi/o4GqPAGZUVE/maxresdefault.jpg",
+    "source": "YouTube",
+    "url": "https://www.youtube.com/watch?v=o4GqPAGZUVE",
+    "tags": ["Talk"]
+  },
+  {
+    "id": "vid001",
+    "title": "VFX Pipeline for Houdini Beginners",
+    "description": "Covers everything from the basics of procedural modeling and simulation to advanced techniques.",
+    "imageUrl": "https://images.unsplash.com/photo-1603468620905-8de7d86b781e?q=80&w=2070&auto=format&fit=crop",
+    "source": "YouTube",
+    "url": "#",
+    "tags": ["Houdini"]
+  },
+  {
+    "id": "vid002",
+    "title": "Blender VFX - Creating a Realistic Explosion",
+    "description": "Learn how to create realistic explosion effects using Blender's physics simulation.",
+    "imageUrl": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
+    "source": "Vimeo",
+    "url": "#",
+    "tags": ["Blender"]
+  },
+  {
+    "id": "vid003",
+    "title": "After Effects Motion Graphics Tutorial",
+    "description": "Introduces techniques for creating stunning motion graphics using After Effects.",
+    "imageUrl": "https://images.unsplash.com/photo-1593344484962-796b44d9f9b4?q=80&w=2070&auto=format&fit=crop",
+    "source": "YouTube",
+    "url": "#",
+    "tags": ["Motiongraphic"]
+  }
+]
