@@ -203,6 +203,14 @@ section h2 {
     border-radius: 5px;
     font-size: 0.8rem;
     margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.card-tags span:hover {
+    background-color: var(--accent-color-1);
+    color: var(--surface-color);
+    font-weight: 500;
 }
 
 .card-source {
@@ -228,6 +236,49 @@ footer {
     font-style: italic;
 }
 
+/* Filter and Sort Controls */
+section {
+    position: relative; /* Positioning context for filter controls */
+}
+
+.filter-controls {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.filter-controls select {
+    background-color: var(--surface-color);
+    color: var(--primary-text-color);
+    padding: 10px 15px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23BB86FC' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 1em;
+    padding-right: 40px; /* Make space for the arrow */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-controls select:hover {
+    border-color: var(--accent-color-1);
+}
+
+.filter-controls select:focus {
+    outline: none;
+    border-color: var(--accent-color-2);
+    box-shadow: 0 0 0 3px rgba(187, 134, 252, 0.3);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
@@ -243,6 +294,18 @@ footer {
 
     nav ul li {
         margin: 0.5rem 0;
+    }
+
+    .filter-controls {
+        position: static;
+        margin-top: 1.5rem;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+    }
+
+    .filter-controls select {
+        width: 100%;
     }
     
     .section-header {
