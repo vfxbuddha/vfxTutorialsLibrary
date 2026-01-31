@@ -1,21 +1,14 @@
 [
   {
-    "id": "vid004",
-    "title": "Supervisors Unsupervised: Behind the scenes of Sinners VFX",
-    "description": "Join three visual effects Supervisors as they talk ab...",
-    "imageUrl": "https://img.youtube.com/vi/o4GqPAGZUVE/maxresdefault.jpg",
-    "source": "YouTube",
-    "url": "https://www.youtube.com/watch?v=o4GqPAGZUVE",
-    "tags": ["Talk"]
-  },
-  {
     "id": "vid001",
     "title": "VFX Pipeline for Houdini Beginners",
     "description": "Covers everything from the basics of procedural modeling and simulation to advanced techniques.",
     "imageUrl": "https://images.unsplash.com/photo-1603468620905-8de7d86b781e?q=80&w=2070&auto=format&fit=crop",
     "source": "YouTube",
     "url": "#",
-    "tags": ["Houdini"]
+    "tags": [
+      "Houdini"
+    ]
   },
   {
     "id": "vid002",
@@ -24,7 +17,9 @@
     "imageUrl": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "source": "Vimeo",
     "url": "#",
-    "tags": ["Blender"]
+    "tags": [
+      "Blender"
+    ]
   },
   {
     "id": "vid003",
@@ -33,6 +28,17 @@
     "imageUrl": "https://images.unsplash.com/photo-1593344484962-796b44d9f9b4?q=80&w=2070&auto=format&fit=crop",
     "source": "YouTube",
     "url": "#",
-    "tags": ["Motiongraphic"]
+    "tags": [
+      "Motiongraphic"
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=TQE7aNpD0yg",
+    "title": "Why Join the VFX Community? Hear from Industry Experts @AdrianPueyo@Joshvfxify@CompositingMentor​",
+    "description": "How do you build your professional network and how do you continue learning throughout your career as a compositor and VFX artist? To find out, join Foundry and a panel of industry experts including Josh Parks, Senior Compositor at Important Looking Pirates, Adrián Pueyo, Head of VFX & Virtual Production at Orca Studios, and Tony Lyons, Lead Compositor at Trixter, for a discussion on the matter.\n\nTake part in the discussion by asking your need-to-know questions to the panelists. Share your questions in advance by adding them to the chat or ask live on March 16.\n\nJosh Parks is a Senior Compositor at Important Looking Pirates and owner of Compositingpro.com, a Nuke compositing training website. Ranging from advertising to feature films, he worked for studios such as MPC, DNEG and ILM. Alongside building his career in compositing, Josh has always been passionate about education and has been heavily involved in guiding education at universities and companies in the VFX industry. He also created his own training platform.\n\nAdrian Pueyo is a VFX & Virtual Production Supervisor specialized in feature films, with 10 years industry experience in digital compositing and tool development and a strong interest for filmmaking, 3D, maths, programming and color science. His current role as Head of VFX & VP in Orca Studios involves researching new workflows and tools and implementing new technologies into production, from planning and on-set shooting to post production, scene capture, shooting workflows and color management. Adrian also has a strong focus on education - directing and teaching 200+ hours every year in a 1-year Masters in Digital Compositing (taught in Spanish) he designed in U-Tad University, as well as organizing private mentoring sessions for reduced groups of Nuke senior artists and supervisors. Additionally, he recently embarked on the journey of preparing recorded online courses on Nuke compositing and tool development on his platform. Throughout his career one of Adrian's biggest passions has been creating tools for Nuke and sharing them with the community. You can find Adrian's projects, Nuke tools and courses on his personal website adrianpueyo.com.\n\nTony Lyons is a Lead Compositor at Trixter in Munich Germany.  He has over 12 years of compositing experience, having started his career in Los Angeles, USA in 2010 and since lived in 7 different countries, working in over 13 VFX houses.  Tony is well known for his CompositingMentor blog and youtube channel, where he covers Green Screen Keying, various Compositing Tools and Workflows, and his recent CG Compositing Series.  Tony is also known for assembling the popular Nuke Survival Toolkit, which is a collection of tools from all around the web conveniently organized into one easy-to-install menu.  He is an active part of the Nuke and Compositing community, presenting at FMX in 2022, and helping start the Foundry Nuke Compositors LinkedIn Group.\n\n\nAbout Us:\nFoundry creates award-winning creative software so global studios can turn incredible ideas into reality.\n\nSubscribe to our channel and get the latest news, tutorials, webinars and updates from the Foundry team. \n\nFollow Us:\nhttps://twitter.com/TheFoundryTeam\nhttps://www.instagram.com/foundryteam/\nhttps://www.facebook.com/TheFoundryTeam\nhttps://www.linkedin.com/company/foundryteam/",
+    "imageUrl": "https://i.ytimg.com/vi/TQE7aNpD0yg/maxresdefault.jpg?v=6410d61f",
+    "source": "YouTube",
+    "tags": [],
+    "id": "vid004"
   }
 ]
