@@ -29,6 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.className = 'card';
 
+            // 데이터가 없을 경우를 대비한 기본값 설정
+            const imageUrl = item.imageUrl || 'assets/images/default-thumbnail.jpg';
+            const title = item.title || 'Untitled Tutorial';
+            const description = item.description || 'No description available.';
+            const source = item.source || 'Unknown Source';
+
             const tagsHtml = item.tags && item.tags.length > 0
                 ? `<div class="card-tags">${item.tags.map(tag => `<span>#${tag}</span>`).join('')}</div>`
                 : '';
@@ -36,13 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <a href="${item.url}" target="_blank" rel="noopener noreferrer">
                     <div class="card-image-container">
-                        <img src="${item.imageUrl}" alt="${item.title}" loading="lazy">
+                        <img src="${imageUrl}" alt="${title}" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <h3>${item.title}</h3>
-                        <p>${item.description}</p>
+                        <h3>${title}</h3>
+                        <p>${description}</p>
                         ${tagsHtml}
-                        <span class="card-source">Source: ${item.source}</span>
+                        <span class="card-source">Source: ${source}</span>
                     </div>
                 </a>
             `;
