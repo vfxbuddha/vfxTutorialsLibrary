@@ -71,7 +71,9 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 main {
-    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
 }
 
 section {
