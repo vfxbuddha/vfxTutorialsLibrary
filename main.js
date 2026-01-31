@@ -134,7 +134,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // --- Logic for Home Page ---
         const populateHomeCardContainer = (items, containerSelector) => {
             const container = document.querySelector(containerSelector);
-            if (!container) return;
+            if (!container) {
+                console.error(`Container not found for selector: ${containerSelector}`);
+                return;
+            }
             container.innerHTML = '';
             if (!items || items.length === 0) {
                 container.innerHTML = '<p class="no-content">No content to display.</p>';
@@ -175,9 +178,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetchData('articleTutorials.json'),
                 fetchData('myBlog.json')
             ]);
-            populateHomeCardContainer(videoTutorials.reverse().slice(0, 4), '#home-video-tutorials .card-container');
-            populateHomeCardContainer(articleTutorials.reverse().slice(0, 4), '#home-article-tutorials .card-container');
-            populateHomeCardContainer(myBlog.reverse().slice(0, 4), '#home-my-blog .card-container');
+            populateHomeCardContainer(videoTutorials.reverse().slice(0, 4), '#video-tutorials-preview .card-container');
+            populateHomeCardContainer(articleTutorials.reverse().slice(0, 4), '#article-tutorials-preview .card-container');
+            populateHomeCardContainer(myBlog.reverse().slice(0, 4), '#blog-preview .card-container');
         };
 
         loadHomePageContent();
