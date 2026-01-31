@@ -1,5 +1,6 @@
 [
   {
+    "id": "vid001",
     "url": "https://www.youtube.com/watch?v=TQE7aNpD0yg",
     "title": "Why Join the VFX Community? Hear from Industry Experts @AdrianPueyo@Joshvfxify@CompositingMentor​",
     "description": "How do you build your professional network and how...",
@@ -7,10 +8,10 @@
     "source": "YouTube",
     "tags": [
       "Talk"
-    ],
-    "id": "vid001"
+    ]
   },
   {
+    "id": "vid002",
     "url": "https://www.youtube.com/watch?v=Ry_mD67cO5c",
     "title": "Launch event: Houdini 16 Amarok",
     "description": "NOTE - skip-less version can be found here: http:/...",
@@ -18,10 +19,10 @@
     "source": "YouTube",
     "tags": [
       "Houdini"
-    ],
-    "id": "vid002"
+    ]
   },
   {
+    "id": "vid003",
     "url": "https://www.youtube.com/watch?v=nsg8drquDno",
     "title": "Advanced Keying Breakdown:  Introduction",
     "description": "Click timecodes to jump to sections of the video:\n...",
@@ -29,7 +30,6 @@
     "source": "YouTube",
     "tags": [
       "Nuke"
-    ],
-    "id": "vid003"
+    ]
   }
 ]

@@ -1,46 +1,46 @@
 [
   {
+    "id": "art004",
     "url": "https://compositingmentor.com/2019/06/30/blacksmatch/",
-    "title": "Untitled",
-    "description": "",
-    "imageUrl": "",
-    "source": "Unknown",
+    "title": "BlacksMatch",
+    "description": "BlacksMatch recreates a Toe operation with merge n...",
+    "imageUrl": "https://img.youtube.com/vi/Kw3bcsmkGuk/maxresdefault.jpg",
+    "source": "Compositing Mentor",
     "tags": [
       "Nuke"
-    ],
-    "id": "art001"
+    ]
   },
   {
+    "id": "art005",
     "url": "https://compositingmentor.com/2019/07/01/binaryalpha/",
-    "title": "Untitled",
-    "description": "",
+    "title": "BinaryAlpha",
+    "description": "Binary Alpha is a very simple, yet super convenien...",
     "imageUrl": "",
-    "source": "Unknown",
+    "source": "Compositing Mentor",
     "tags": [
       "Nuke"
-    ],
-    "id": "art002"
+    ]
   },
   {
+    "id": "art006",
     "url": "https://compositingmentor.com/2021/11/03/cg-compositing-series-1-0-introduction/",
-    "title": "Untitled",
-    "description": "",
-    "imageUrl": "",
-    "source": "Unknown",
+    "title": "CG Compositing Series – 1.0 Introduction",
+    "description": "How do I best rebuild my CG passes, for the most f...",
+    "imageUrl": "https://img.youtube.com/vi/ep9_dsTsUT8/maxresdefault.jpg",
+    "source": "Compositing Mentor",
     "tags": [
       "Nuke"
-    ],
-    "id": "art003"
+    ]
   },
   {
+    "id": "art007",
     "url": "https://www.actionvfx.com/blog/how-to-remove-black-white-background-from-stock-footage-in-nuke-nuke-tutorial",
-    "title": "Untitled",
-    "description": "",
-    "imageUrl": "",
-    "source": "Unknown",
+    "title": "How To Remove Black & White Background from Stock Footage in Nuke",
+    "description": "In this tutorial, we will learn about how to remov...",
+    "imageUrl": "https://img.youtube.com/vi/KIGOPZXr81w/maxresdefault.jpg",
+    "source": "ActionVFX",
     "tags": [
       "Nuke"
-    ],
-    "id": "art004"
+    ]
   }
 ]
