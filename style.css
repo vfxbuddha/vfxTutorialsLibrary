@@ -7,6 +7,8 @@
     --accent-color-2: #BB86FC;
     --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     --card-hover-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+    --btn-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    --btn-hover-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
 }
 
 body {
@@ -88,31 +90,18 @@ section h2 {
     padding-left: 10px;
 }
 
-.hero {
-    text-align: center;
-    padding: 3rem 1rem;
-    margin-bottom: 2rem;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    border: none;
-    padding: 0;
-}
-
 .home-section {
     margin-bottom: 3rem;
 }
 
-.home-section-header {
+.section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
 }
 
-.home-section-header h3 {
+.section-header h3 {
     font-size: 1.8rem;
     color: var(--primary-text-color);
     border-left: 4px solid var(--accent-color-2);
@@ -120,9 +109,23 @@ section h2 {
     margin: 0;
 }
 
-.more-link {
-    font-size: 1rem;
-    font-weight: 500;
+.btn {
+    background-color: var(--accent-color-1);
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: var(--btn-shadow);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-color-2);
+    color: var(--surface-color);
+    transform: translateY(-2px);
+    box-shadow: var(--btn-hover-shadow);
 }
 
 .card-container {
@@ -130,18 +133,6 @@ section h2 {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
 }
-
-/* 홈 페이지에서는 최대 3개의 열만 표시 */
-.home-cards {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-
-@media (min-width: 1024px) {
-    .home-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 
 .card {
     background-color: var(--surface-color);
@@ -158,34 +149,67 @@ section h2 {
     box-shadow: var(--card-hover-shadow);
 }
 
-.card img {
+.card a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-image-container {
     width: 100%;
-    height: 180px;
+    height: 180px; /* 고정 높이 */
+    overflow: hidden;
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-image-container img {
+    transform: scale(1.05);
 }
 
 .card-content {
     padding: 1.5rem;
-    flex-grow: 1; /* 카드의 높이가 달라도 content가 늘어나도록 */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-content h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-top: 0;
     color: var(--primary-text-color);
 }
 
 .card-content p {
     color: var(--secondary-text-color);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    flex-grow: 1;
+    margin-bottom: 1rem;
 }
 
-.card-content .source {
-    font-style: italic;
+.card-tags {
+    margin-bottom: 1rem;
+}
+
+.card-tags span {
+    background-color: #333;
+    color: var(--accent-color-1);
+    padding: 4px 8px;
+    border-radius: 5px;
     font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+.card-source {
+    font-style: italic;
+    font-size: 0.85rem;
     color: var(--accent-color-2);
-    margin-top: 1rem;
-    display: block;
+    margin-top: auto; /* Push source to the bottom */
 }
 
 footer {
@@ -197,11 +221,14 @@ footer {
     color: var(--secondary-text-color);
 }
 
-.hidden {
-    display: none;
+.no-content {
+    color: var(--secondary-text-color);
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
 }
 
-/* 반응형 디자인 */
+/* Responsive Design */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -218,12 +245,24 @@ footer {
         margin: 0.5rem 0;
     }
     
-    .home-section-header {
+    .section-header {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .more-link {
-        margin-top: 0.5rem;
+    .section-header a.view-all-link {
+        margin-top: 0.75rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
     }
 }
