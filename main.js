@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const bodyId = document.body.id;
 
@@ -63,24 +62,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     fetchData('articleTutorials.json'),
                     fetchData('myBlog.json')
                 ]);
-                populateCardContainer(videoTutorials.slice(0, 4), '#home-video-tutorials');
-                populateCardContainer(articleTutorials.slice(0, 4), '#home-article-tutorials');
-                populateCardContainer(myBlog.slice(0, 4), '#home-my-blog');
+                populateCardContainer(videoTutorials.reverse().slice(0, 4), '#home-video-tutorials');
+                populateCardContainer(articleTutorials.reverse().slice(0, 4), '#home-article-tutorials');
+                populateCardContainer(myBlog.reverse().slice(0, 4), '#home-my-blog');
                 break;
 
             case 'video-tutorials-page':
                 const videoData = await fetchData('videoTutorials.json');
-                populateCardContainer(videoData, '#video-tutorials .card-container');
+                populateCardContainer(videoData.reverse(), '#video-tutorials .card-container');
                 break;
 
             case 'article-tutorials-page':
                 const articleData = await fetchData('articleTutorials.json');
-                populateCardContainer(articleData, '#article-tutorials .card-container');
+                populateCardContainer(articleData.reverse(), '#article-tutorials .card-container');
                 break;
 
             case 'blog-page':
                 const blogData = await fetchData('myBlog.json');
-                populateCardContainer(blogData, '#my-blog .card-container');
+                populateCardContainer(blogData.reverse(), '#my-blog .card-container');
                 break;
         }
     };
