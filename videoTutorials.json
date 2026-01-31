@@ -31,5 +31,49 @@
     "tags": [
       "Nuke"
     ]
+  },
+  {
+    "id": "vid008",
+    "url": "https://www.youtube.com/watch?v=HfHC0wNYry8",
+    "title": "SIGGRAPH 2025 Technical Papers Trailer",
+    "description": "The SIGGRAPH Technical Papers program is the premi...",
+    "imageUrl": "https://img.youtube.com/vi/HfHC0wNYry8/maxresdefault.jpg",
+    "source": "YouTube",
+    "tags": [
+      "Papers"
+    ]
+  },
+  {
+    "id": "vid009",
+    "url": "https://www.youtube.com/watch?v=p6Z21XGzZB8",
+    "title": "Python for the Anxious CG Artist #01 - Why Learn Python?",
+    "description": "I am excited to kick off this new series on Python...",
+    "imageUrl": "https://img.youtube.com/vi/p6Z21XGzZB8/maxresdefault.jpg",
+    "source": "YouTube",
+    "tags": [
+      "Python"
+    ]
+  },
+  {
+    "id": "vid010",
+    "url": "https://www.youtube.com/watch?v=etNeb3dRiSE",
+    "title": "Houdini VEX Primer",
+    "description": "A primer into using VEX and Attribute Wrangle in H...",
+    "imageUrl": "https://img.youtube.com/vi/etNeb3dRiSE/maxresdefault.jpg",
+    "source": "YouTube",
+    "tags": [
+      "Houdini"
+    ]
+  },
+  {
+    "id": "vid011",
+    "url": "https://www.youtube.com/watch?v=b4WXR4M31ec",
+    "title": "How CopyCat helped shoot a short horror film in just two hours",
+    "description": "Join director Freddy Chávez Olmos to learn how he ...",
+    "imageUrl": "https://img.youtube.com/vi/b4WXR4M31ec/maxresdefault.jpg",
+    "source": "YouTube",
+    "tags": [
+      "Nuke"
+    ]
   }
 ]
